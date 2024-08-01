@@ -1,0 +1,18 @@
+#si joed, stan , earl at ako mag babayad pero buraot si joed di mag babayad tapos mag tip sila ng 15% ang bill ay 365.00
+
+#ang mag babayad ay apat buraot kasi si joed ilan ang hatian
+
+
+
+
+ 
+bill = float(input("Mag kano ang kinaen ni joed? "))
+tip = int(input("Mag kano bayad mo sa waiter? 10, 12 or 15? "))
+nanlibre = int(input("ilan nanlibre kay joed? "))
+buraot_ni_waiter = tip /100
+total_na_naburaot = bill * buraot_ni_waiter
+bill_overall = bill + total_na_naburaot
+hatian_1 = bill_overall / nanlibre
+hatian = round(hatian_1, 2)
+hatian = "{:.2f}".format(hatian_1)
+print (f"Ang babayaran ng apat na naburaot ay ${hatian} milyongdolyares") 
